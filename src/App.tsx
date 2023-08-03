@@ -1,5 +1,5 @@
 export default function App() {
   return (
-    <h1>App</h1>
+    <h1>Hello, World!</h1>
   )
 }
