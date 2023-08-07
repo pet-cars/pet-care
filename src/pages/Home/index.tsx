@@ -1,12 +1,24 @@
-import { Link } from "react-router-dom"
+import "../../global.css"
+import "./styles.css"
+import logo from "../../assets/images/logo.png"
 
 export default function Home() {
     return (
         <>
-            <h1>Home</h1>
-            <Link to="/cadastro">
-                <button>Ir para cadastro</button>
-            </Link>
+            <header>
+                <nav>
+                    <div className="menu-content">
+                        <img src={logo} alt="logo"/>
+                        <ul className="menu">
+                            <li className="menu-item">Início</li>
+                            <li className="menu-item">Sobre</li>
+                            <li className="menu-item">Contato</li>
+                            <li className="menu-item">Login</li>
+                            <button className="button">Cadastre-se</button>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
         </>
     )
 }

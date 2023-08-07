@@ -1,0 +1,40 @@
+.menu-content{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 4rem;
+    margin-top: 1rem;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+.menu-item{
+    margin-left: 4rem;
+    cursor: pointer;
+    position: relative;
+}
+.menu-item::before{
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    height: 3px;
+    width: 0;
+    background: #F87800;
+    border-radius: 50px;
+    transition: width 0.3s ease;
+}
+.menu-item:hover::before{
+    width: 100%;
+}
+
+.button{
+    margin-left: 4rem;
+    padding: 1rem;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 1px 1px 2px 2px #e7dede;
+    font-size: 16px;
+    font-family: "Poppins", sans-serif;
+    color: #ffff;
+    background-color: #F87800;
+}
