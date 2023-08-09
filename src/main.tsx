@@ -5,7 +5,7 @@ import './styles/global.css'
 import Header from './components/Header'
 import AllRoutes from './routes'
 import Container from './components/Container'
-import Banner from './components/Banner/Banner'
+import Home from './pages/Home'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
@@ -13,8 +13,8 @@ root.render(
   <Router>
     <Container>
       <Header />
-      <Banner />
-      <AllRoutes />
+      <Home />
+      {/*<AllRoutes />*/}
     </Container>
   </Router>
 )
