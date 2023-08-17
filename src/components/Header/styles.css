@@ -7,6 +7,10 @@ nav {
     display: flex;
     justify-content: space-between;
     height: 100%;
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
 }
 
 .menu {
@@ -53,4 +57,7 @@ nav {
     font-family: "Poppins", sans-serif;
     color: #ffff;
     background-color: #F87800;
+}
+a{
+    color: #ffff;
 }

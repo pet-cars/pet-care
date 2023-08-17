@@ -29,7 +29,9 @@ export default function Header() {
                             Login
                         </NavLink>
                     </li>
-                    <button className="button">Cadastre-se</button>
+                    <button className="button">
+                        <NavLink to="/cadastro">Cadastre-se</NavLink>
+                    </button>
                 </ul>
             </nav>
         </header>

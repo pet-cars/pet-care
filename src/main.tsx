@@ -6,17 +6,14 @@ import Header from './components/Header'
 import AllRoutes from './routes'
 import Container from './components/Container'
 import Home from './pages/Home'
+import Cadastro from './pages/Cadastro'
 import Footer from './components/Footer'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
 root.render(
   <Router>
-    <Container>
       <Header />
-      <Home />
-      {/*<AllRoutes />*/}
-    </Container>
-    <Footer/>
+      <AllRoutes />
   </Router>
 )

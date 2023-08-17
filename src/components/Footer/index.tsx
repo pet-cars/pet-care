@@ -1,11 +1,36 @@
+import { useState } from 'react'
 import './styles.css'
 import aviao from '../../assets/images/aviaozinho.png'
 import face from '../../assets/images/face.png'
 import insta from '../../assets/images/insta.png'
 import local from '../../assets/images/local.png'
 
+import emailjs from "@emailjs/browser"
+
+const emailTemplate = import.meta.env.VITE_EMAIL_TEMPLATE
+const emailService = import.meta.env.VITE_EMAIL_SERVICE
+const publicKey = import.meta.env.VITE_PUBLIC_KEY
 
 export default function Footer() {
+    const [message, setMessage] = useState("")
+
+    const handleSubmit = (e: React.FormEvent) => {
+        e.preventDefault()
+
+        const templateParams = {
+            message: message
+        }
+
+        emailjs.send(
+            `${emailService}`,
+            `${emailTemplate}`,
+            templateParams,
+            `${publicKey}`
+        ).then(() => {
+            setMessage("")
+        })
+    }
+
     return(
         <footer>
             <div className='content'>
@@ -14,10 +39,18 @@ export default function Footer() {
                         <h2><span>Entre</span> em <em>contato</em> conosco</h2>
                         <p>Caso tenha alguma duvida ou sujestão<br/>não exite em nos contar</p>
 
-                        <div className='form'>
-                            <input type="text" placeholder='Tire suas duvidas aqui'/>
-                            <button className='botao-enviar'><img className='aviao' src={aviao}/></button>
-                        </div>
+                        <form className='form' onSubmit={handleSubmit}>
+                            <input 
+                                type="text" 
+                                value={message}
+                                required
+                                onChange={(e) => setMessage(e.target.value)}
+                                placeholder='Tire suas duvidas aqui'
+                            />
+                            <button type="submit" className='botao-enviar'>
+                                <img className='aviao' src={aviao}/>
+                            </button>
+                        </form>
                             <div className='midias'>
                                 <a href='https://www.facebook.com/' target='_blank'><img className='img-midias' src={face} alt="facebook da prefeitura"/></a>
                                 <a href='https://www.instagram.com/' target='_blank'><img className='img-midias' src={insta} alt="intagram da prefeitura" /></a>
@@ -27,7 +60,7 @@ export default function Footer() {
                     
                     <div>
                         <div className='ongs'>
-                            <h2><span>ONSG</span> parceiras</h2>
+                            <h2><span>ONGS</span> parceiras</h2>
                             <ul>
                                 <li>Primeira</li>
                                 <li>segunda</li>

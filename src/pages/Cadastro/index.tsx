@@ -1,5 +1,10 @@
+import './styles.css'
+
 export default function Cadastro() {
     return (
-        <h1>Cadastro</h1>
+        <main>
+            <h1 className="title-cadastro"><span>Prencha</span> o <em>Formulario</em> </h1>
+            
+        </main>
     )
 }

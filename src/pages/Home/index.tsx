@@ -5,10 +5,12 @@ import b1 from '../../assets/images/b1.png'
 import b2 from '../../assets/images/b2.png'
 import b3 from '../../assets/images/b3.png'
 import sobre from '../../assets/images/sobre.png'
+import Footer from "../../components/Footer"
 
 export default function Home() {
     return (
-        <main>
+        <>
+            <main>
             <section className="cont">
                 <ul>
                     <li className="title1">
@@ -27,7 +29,7 @@ export default function Home() {
             </section>
 
             <section className="beneficios">
-                <h2 className="titulo-beneficios">Conheça os <span>benefíos</span> do <em>censo</em></h2>
+                <h2 className="titulo-beneficios">Conheça os <span>benefícios</span> do <em>censo</em></h2>
 
                 <div className="os-beneficios">
                     <div className="card">
@@ -67,5 +69,7 @@ export default function Home() {
                 </div>
             </section>
         </main>
+        <Footer/>
+        </>
     )
 }
