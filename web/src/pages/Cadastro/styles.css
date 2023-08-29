@@ -1,0 +1,10 @@
+main{
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.title-cadastro{
+    margin-top: 10vh;
+    text-align: center;
+}
