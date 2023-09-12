@@ -1,5 +1,6 @@
 import './styles.css'
 import { useState } from 'react'
+import axios from 'axios';
 
 const valorFormulario = {
     nome: String,
@@ -22,7 +23,7 @@ export default function Cadastro() {
 
     const onChange = (e : React.ChangeEvent<HTMLInputElement>) => {
         setFormValores((prevState)=> ({
-            ...prevState,
+             ...prevState,
             [e.target.id]: e.target.value
         }))
     }
@@ -30,7 +31,16 @@ export default function Cadastro() {
     function Form(e : React.FormEvent<HTMLFormElement>){
         e.preventDefault();
         console.log(formValores);
-        setFormValores(valorFormulario)
+        setFormValores(valorFormulario);
+
+        try {
+            axios.post("http://localhost:3333/cadastro",{ 
+                   
+            //  TODO: mapear o formValores para enviar os dados no backend
+                }).then((res) => console.log(res))
+        } catch (error) {
+            console.log(error);
+        }
     }
 
     return (
