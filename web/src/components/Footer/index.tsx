@@ -40,7 +40,7 @@ export default function Footer() {
                         <p>Caso tenha alguma duvida ou sujestão<br/>não exite em nos contar</p>
 
                         <form className='form' onSubmit={handleSubmit}>
-                            <input 
+                            <input className='sugestao' 
                                 type="text" 
                                 value={message}
                                 required

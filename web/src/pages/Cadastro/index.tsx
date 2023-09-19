@@ -1,4 +1,5 @@
 import './styles.css'
+import azul from '../../assets/images/detalhe-azul.png'
 import { useState } from 'react'
 import axios from 'axios';
 
@@ -44,36 +45,83 @@ export default function Cadastro() {
     }
 
     return (
-        <main>
+        <main className='main-cadastro'>
+
+
+            <div className='content'>
             <h1 className="title-cadastro"><span>Prencha</span> o <em>Formulario</em> </h1>
-            
-            <form onSubmit={Form}>
-                <label htmlFor="">Nome</label>
-                <input required name='nome' id='nome' type="text" onChange={(e) => onChange(e)}/>
-                <label htmlFor="">RG</label>
-                <input required name='RG' id='RG' type="number" onChange={onChange}/>
-                <label htmlFor="">CPF</label>
-                <input required name='CPF' id='CPF' type="number" onChange={onChange}/>
-                <label htmlFor="">Email</label>
-                <input required name='email' id='email' type="email" onChange={onChange}/>
-                <label htmlFor="">Senha</label>
-                <input required name='senha' id='senha' type="password" onChange={onChange}/>
-                <label htmlFor="">Confirmar Senha</label>
-                <input required name='Csenha' id='Csenha' type="password" onChange={onChange}/>
-                <label htmlFor="">CEP</label>
-                <input required name='CEP' id='CEP' type="number" onChange={onChange}/>
-                <label htmlFor="">Cidade</label>
-                <input required name='cidade' id='cidade' type="text" onChange={onChange}/>
-                <label htmlFor="">Bairro</label>
-                <input required name='bairro' id='bairro' type="text" onChange={onChange}/>
-                <label htmlFor="">Endereço</label>
-                <input required name='endereco' id='endereco' type="text" onChange={onChange}/>
-                <label htmlFor="">Número</label>
-                <input required name='numero' id='numero' type="number" onChange={onChange}/>
-                <label htmlFor="">Complemento</label>
-                <input required name='complemento' id='complemento' type="text" onChange={onChange}/>
-                <button type='submit'>Enviar</button>
+            <form onSubmit={Form} className='form-cadastro'>
+                <div className='part-1'>          
+                    <div>
+                        <label htmlFor="" className='label-cadastro'>Nome:</label>
+                        <input className='form-campo' required name='nome' id='nome' type="text" onChange={(e) => onChange(e)}/>
+                    </div>
+                    
+                    <div>
+                        <label htmlFor="" className='label-cadastro'>RG:</label>
+                        <input className='form-campo' required name='RG' id='RG' type="number" onChange={onChange}/>
+                    </div>
+                    
+                    <div>
+                        <label htmlFor="" className='label-cadastro'>CPF:</label>
+                        <input className='form-campo' required name='CPF' id='CPF' type="number" onChange={onChange}/>
+                    </div>
+                    
+                    <div>
+                        <label htmlFor="" className='label-cadastro'>Email:</label>
+                        <input className='form-campo' required name='email' id='email' type="email" onChange={onChange}/>
+                    </div>
+                    
+                    <div>
+                        <label htmlFor="" className='label-cadastro'>Senha:</label>
+                        <input className='form-campo' required name='senha' id='senha' type="password" onChange={onChange}/>
+                    </div>
+                    
+                    <div>
+                        <label htmlFor="" className='label-cadastro'>Confirmar Senha:</label>
+                        <input className='form-campo' required name='Csenha' id='Csenha' type="password" onChange={onChange}/>
+                    </div>
+                </div>
+
+                <div className='part-2'>
+
+                    <div>
+                        <label htmlFor="" className='label-cadastro'>CEP:</label>
+                        <input className='form-campo' required name='CEP' id='CEP' type="number" onChange={onChange}/>
+                    </div>
+                    
+                    <div>
+                        <label htmlFor="" className='label-cadastro'>Cidade:</label>
+                        <input className='form-campo' required name='cidade' id='cidade' type="text" onChange={onChange}/>
+                    </div>
+                    
+                    <div>
+                        <label htmlFor="" className='label-cadastro'>Bairro:</label>
+                        <input className='form-campo' required name='bairro' id='bairro' type="text" onChange={onChange}/>
+                    </div>
+                    
+                    <div>
+                        <label htmlFor="" className='label-cadastro'>Endereço:</label>
+                        <input className='form-campo' required name='endereco' id='endereco' type="text" onChange={onChange}/>
+                    </div>
+                    
+                    <div>
+                        <label htmlFor="" className='label-cadastro'>Número:</label>
+                        <input className='form-campo' required name='numero' id='numero' type="number" onChange={onChange}/>
+                    </div>
+                    
+                    <div>
+                        <label htmlFor="" className='label-cadastro'>Complemento:</label>
+                        <input className='form-campo' required name='complemento' id='complemento' type="text" onChange={onChange}/>
+                    </div>
+                </div>
+                
+                
+                <div className='botao'>
+                    <button type='submit' className='enviar-cadastro'>Enviar</button>
+                </div>
             </form>
+            </div>
         </main>
     )
 }

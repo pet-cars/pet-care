@@ -27,18 +27,18 @@ footer{
     box-shadow: 1px 1px 3px 3px #cec1c1;
     border-radius: 25px;
 }
-input{
+.sugestao{
     background: none;
     border: none;
     width: 100%;
     font-size: 19px;
 }
-textarea:focus, input:focus {
+.sugestao textarea:focus, input:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
     font-size: 19px;
 }
-::placeholder{
+.sugestao::placeholder{
     color: black;
     font-size: 19px;
 }

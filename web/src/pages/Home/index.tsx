@@ -10,7 +10,7 @@ import Footer from "../../components/Footer"
 export default function Home() {
     return (
         <>
-            <main>
+            <main className="main-home">
             <section className="cont">
                 <ul>
                     <li className="title1">
@@ -69,7 +69,6 @@ export default function Home() {
                 </div>
             </section>
         </main>
-        <Footer/>
         </>
     )
 }

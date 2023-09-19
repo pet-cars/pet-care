@@ -15,5 +15,6 @@ root.render(
   <Router>
       <Header />
       <AllRoutes />
+      <Footer/>
   </Router>
 )
