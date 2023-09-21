@@ -1,6 +1,6 @@
 footer{
     width: 100%;
-    background-color: #E0DCDC;
+    background-color: #f7f3f3;
     opacity: 2;
     margin-top: 10vh;
     padding: 2rem 2rem;
@@ -33,7 +33,7 @@ footer{
     width: 100%;
     font-size: 19px;
 }
-.sugestao textarea:focus, input:focus {
+.sugestao textarea:focus, .sugestao:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
     font-size: 19px;

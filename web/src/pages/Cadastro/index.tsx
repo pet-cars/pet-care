@@ -48,71 +48,73 @@ export default function Cadastro() {
         <main className='main-cadastro'>
 
 
-            <div className='content'>
+            <div className=''>
             <h1 className="title-cadastro"><span>Prencha</span> o <em>Formulario</em> </h1>
             <form onSubmit={Form} className='form-cadastro'>
-                <div className='part-1'>          
-                    <div>
-                        <label htmlFor="" className='label-cadastro'>Nome:</label>
-                        <input className='form-campo' required name='nome' id='nome' type="text" onChange={(e) => onChange(e)}/>
+                <div className='formulario'>
+                    <div className='part-1'>          
+                        <div className='teste'>
+                            <label htmlFor="nome" className='label-cadastro'>Nome:</label>
+                            <input className='form-campo' required name='nome' id='nome' type="text" onChange={(e) => onChange(e)}/>
+                        </div>
+                        
+                        <div className='teste'>
+                            <label htmlFor="RG" className='label-cadastro'>RG:</label>
+                            <input className='form-campo' required name='RG' id='RG' type="number" onChange={onChange}/>
+                        </div>
+                        
+                        <div className='teste'>
+                            <label htmlFor="CPF" className='label-cadastro'>CPF:</label>
+                            <input className='form-campo' required name='CPF' id='CPF' type="number" onChange={onChange}/>
+                        </div>
+                        
+                        <div className='teste'>
+                            <label htmlFor="email" className='label-cadastro'>Email:</label>
+                            <input className='form-campo' required name='email' id='email' type="email" onChange={onChange}/>
+                        </div>
+                        
+                        <div className='teste'>
+                            <label htmlFor="senha" className='label-cadastro'>Senha:</label>
+                            <input className='form-campo' required name='senha' id='senha' type="password" onChange={onChange}/>
+                        </div>
+                        
+                        <div className='teste'>
+                            <label htmlFor="Csenha" className='label-cadastro'>Confirmar Senha:</label>
+                            <input className='form-campo' required name='Csenha' id='Csenha' type="password" onChange={onChange}/>
+                        </div>
                     </div>
-                    
-                    <div>
-                        <label htmlFor="" className='label-cadastro'>RG:</label>
-                        <input className='form-campo' required name='RG' id='RG' type="number" onChange={onChange}/>
-                    </div>
-                    
-                    <div>
-                        <label htmlFor="" className='label-cadastro'>CPF:</label>
-                        <input className='form-campo' required name='CPF' id='CPF' type="number" onChange={onChange}/>
-                    </div>
-                    
-                    <div>
-                        <label htmlFor="" className='label-cadastro'>Email:</label>
-                        <input className='form-campo' required name='email' id='email' type="email" onChange={onChange}/>
-                    </div>
-                    
-                    <div>
-                        <label htmlFor="" className='label-cadastro'>Senha:</label>
-                        <input className='form-campo' required name='senha' id='senha' type="password" onChange={onChange}/>
-                    </div>
-                    
-                    <div>
-                        <label htmlFor="" className='label-cadastro'>Confirmar Senha:</label>
-                        <input className='form-campo' required name='Csenha' id='Csenha' type="password" onChange={onChange}/>
-                    </div>
-                </div>
 
-                <div className='part-2'>
+                    <div className='part-2'>
 
-                    <div>
-                        <label htmlFor="" className='label-cadastro'>CEP:</label>
-                        <input className='form-campo' required name='CEP' id='CEP' type="number" onChange={onChange}/>
-                    </div>
-                    
-                    <div>
-                        <label htmlFor="" className='label-cadastro'>Cidade:</label>
-                        <input className='form-campo' required name='cidade' id='cidade' type="text" onChange={onChange}/>
-                    </div>
-                    
-                    <div>
-                        <label htmlFor="" className='label-cadastro'>Bairro:</label>
-                        <input className='form-campo' required name='bairro' id='bairro' type="text" onChange={onChange}/>
-                    </div>
-                    
-                    <div>
-                        <label htmlFor="" className='label-cadastro'>Endereço:</label>
-                        <input className='form-campo' required name='endereco' id='endereco' type="text" onChange={onChange}/>
-                    </div>
-                    
-                    <div>
-                        <label htmlFor="" className='label-cadastro'>Número:</label>
-                        <input className='form-campo' required name='numero' id='numero' type="number" onChange={onChange}/>
-                    </div>
-                    
-                    <div>
-                        <label htmlFor="" className='label-cadastro'>Complemento:</label>
-                        <input className='form-campo' required name='complemento' id='complemento' type="text" onChange={onChange}/>
+                        <div className='teste'>
+                            <label htmlFor="CEP" className='label-cadastro'>CEP:</label>
+                            <input className='form-campo' required name='CEP' id='CEP' type="number" onChange={onChange}/>
+                        </div>
+                        
+                        <div className='teste'>
+                            <label htmlFor="cidade" className='label-cadastro'>Cidade:</label>
+                            <input className='form-campo' required name='cidade' id='cidade' type="text" onChange={onChange}/>
+                        </div>
+                        
+                        <div className='teste'>
+                            <label htmlFor="bairro" className='label-cadastro'>Bairro:</label>
+                            <input className='form-campo' required name='bairro' id='bairro' type="text" onChange={onChange}/>
+                        </div>
+                        
+                        <div className='teste'>
+                            <label htmlFor="endereco" className='label-cadastro'>Endereço:</label>
+                            <input className='form-campo' required name='endereco' id='endereco' type="text" onChange={onChange}/>
+                        </div>
+                        
+                        <div className='teste'>
+                            <label htmlFor="numero" className='label-cadastro'>Número:</label>
+                            <input className='form-campo' required name='numero' id='numero' type="number" onChange={onChange}/>
+                        </div>
+                        
+                        <div className='teste'>
+                            <label htmlFor="complemento" className='label-cadastro'>Complemento:</label>
+                            <input className='form-campo' required name='complemento' id='complemento' type="text" onChange={onChange}/>
+                        </div>
                     </div>
                 </div>
                 
