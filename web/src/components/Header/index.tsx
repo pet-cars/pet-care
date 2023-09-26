@@ -15,7 +15,7 @@ export default function Header() {
                         </NavLink>
                     </li>
                     <li className="menu-item">
-                        <NavLink to="/sobre">
+                        <NavLink to="/Sobre">
                             Sobre
                         </NavLink>
                     </li>

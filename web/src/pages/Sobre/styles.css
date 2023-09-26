@@ -1,0 +1,21 @@
+.main-sobre {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+.conteudo-sobre{
+    display: flex;
+    align-items: center;
+}
+.equipe{
+    border-radius: 25px;
+    width: 50%;
+}
+.sobre-equipe{
+    width: 50%;
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
