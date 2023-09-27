@@ -1,5 +1,13 @@
 import './styles.css'
 import equipe from '../../assets/images/equipe.png'
+import f1 from '../../assets/images/1.jpg'
+import f2 from '../../assets/images/2.jpg'
+import f3 from '../../assets/images/3.jpg'
+import f4 from '../../assets/images/4.jpg'
+import f5 from '../../assets/images/5.jpg'
+import f6 from '../../assets/images/6.jpg'
+import f7 from '../../assets/images/7.jpg'
+import f8 from '../../assets/images/8.jpg'
 
  export default function Sobre(){
     return(
@@ -18,11 +26,29 @@ import equipe from '../../assets/images/equipe.png'
                     </p>
                     <p>Alem dos casos atendidos no Departamento a equipe conta com o castramovel, que é uma van veterinaria que ja realizoumais de 1300 processos de castrações em cães e gatos, totalmente gratuitos</p>
                 </div>
-
-                <div className='galeria'>
-                    <h2></h2>
-                </div>
             </div>
+                <div className='galeria'>
+                    <h2 className='titulo-galeria'>Um <span>pouco</span> do <em>nosso</em> trabalho</h2>
+
+                    <div className='fotos'>
+                        <div className='foto-1'>
+                            <img className='f' src={f1} alt="" />
+                            <div className='legenda'>
+                                    <p>Dia de EcoAção na Escola São José</p>
+                                    <p>Dia dos estudantes terem a chance de se conectar com a fauna da Mata Atlântica, conhecendo de pertinho animais como cobras e lagartos. A biodiversidade é incrível e merece ser protegida! 
+                                    Dessa vez, a EcoAção foi no Colégio São José, dia repleto de aprendizado sobre o meio ambiente e em parceria com a escola, encerramos a emocionante EcoAção, promovida pela Secretaria Municipal de Meio Ambiente (DPFAUNA).
+                                </p>
+                            </div>
+                        </div>
+                        <img className='f' src={f2} alt="" />
+                        <img className='f' src={f3} alt="" />
+                        <img className='f' src={f4} alt="" />
+                        <img className='f' src={f5} alt="" />
+                        <img className='f' src={f6} alt="" />
+                        <img className='f' src={f7} alt="" />
+                        <img className='f' src={f8} alt="" />
+                    </div>
+                </div>
 
         </main>
     )

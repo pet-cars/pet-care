@@ -1,13 +1,29 @@
 import "./styles.css"
 import logo from "../../assets/images/logo.png"
+import {Menu, X} from 'lucide-react'
 
 import { NavLink } from "react-router-dom"
+import { useState } from "react"
+import { MobileMenu } from "./Mobile-menu"
 
 export default function Header() {
+    const [showMenu, setShowMenu] = useState(false)
+
+    function openMenu(){
+        setShowMenu(!showMenu)
+
+        if (!showMenu){
+            document.body.style.overflow = 'hidden'
+        }
+        else{
+            document.body.style.overflow = 'auto'
+        }
+    }
+
     return (
         <header>
             <nav>
-                <img src={logo} alt="logo" />
+                <img className="logo" src={logo} alt="logo" />
                 <ul className="menu">
                     <li className="menu-item">
                         <NavLink to="/">
@@ -33,7 +49,18 @@ export default function Header() {
                         <NavLink to="/cadastro">Cadastre-se</NavLink>
                     </button>
                 </ul>
+                <button className="mobile-menu" onClick={openMenu}>
+                    {showMenu ? (
+                        <X/>
+                    ): (
+                        <Menu/>
+                    )}
+                </button>
             </nav>
+
+            {showMenu && (
+                <MobileMenu/>
+            )}
         </header>
     )
 }

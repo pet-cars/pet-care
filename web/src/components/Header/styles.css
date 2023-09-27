@@ -61,3 +61,22 @@ nav {
 a{
     color: #ffff;
 }
+.mobile-menu{
+    display: none;
+}
+@media( max-width:768px ){
+    .menu{
+        display: none;
+    }
+
+    .mobile-menu{
+        border: none;
+        background: none;
+        display: block;
+        z-index: 2;
+    }
+
+    .logo{
+        width: 350px;
+    }
+}
