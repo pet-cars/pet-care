@@ -40,6 +40,49 @@ import f8 from '../../assets/images/8.jpg'
                                 </p>
                             </div>
                         </div>
+
+                        <div className='foto-1'>
+                            <div className='legenda l2'>
+                                    <p>Esse Nenezão veio tomar vacina…para quem não sabe, ele é um dos 60 cães resgatados do canil clandestino, vítima de maus tratos.. hoje ele está em novo lar e já está gordinho assim… quem viu e quem vê !!!!
+                                </p>
+                            </div>
+                            <img className='f' src={f2} alt="" />
+                        </div>
+                        
+                        <div className='foto-1'>
+                            <img className='f' src={f3} alt="" />
+                            <div className='legenda'>
+                                    <p>Festival do Chocolate Feira de adoção e também dia de vacinação antirrábica</p>
+                            </div>
+                        </div>
+
+                        <div className='foto-1'>
+                            <div className='legenda l2'>
+                                    <p>Mais um dia da equipe cuidando da fauna silvestre para o bem da nossa cidade de Ribeirao Pires</p>
+                            </div>
+                            <img className='f' src={f4} alt="" />
+                        </div>
+
+                        <div className='foto-1'>
+                            <img className='f' src={f5} alt="" />
+                            <div className='legenda'>
+                                    <p>Bothrops jararaca 🐍</p>
+                                    <p>Essa espécie vem aparecendo com frequência, dentre eles os possíveis motivos ou a junção deles.</p>
+                            </div>
+                        </div>
+
+                        <div className='foto-1'>
+                            <div className='legenda l2'>
+                                    <p>agarto atacado por cães…
+precisa ser entubado para receber
+oxigênio durante cuidados veterinários !!!</p>
+                            </div>
+                            <img className='f' src={f6} alt="" />
+                        </div>
+
+                        
+
+                        
                         <img className='f' src={f2} alt="" />
                         <img className='f' src={f3} alt="" />
                         <img className='f' src={f4} alt="" />

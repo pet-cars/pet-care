@@ -1,20 +1,28 @@
 .menu-mobile{
     position: absolute;
     left: 50%;
-
+    top: 50%;
     transform: translate(-50%, -50%);
     display: flex !important;
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    top: 100%;
     justify-content: center;
     background-color: var(--azulao);
-    transition: all 0.4s ease 0s;
-
+    animation: animacao 2s;
 }
-
-.menu-mobile.active{
+@keyframes animacao {
+    0%{
+        top: 0vh;
+    }
+    50%{
+        top: 50vh;
+    }
+    100%{
+        top: 50vh;
+    }
+}
+.menu-mobile .active{
     top: 0;
 
 }

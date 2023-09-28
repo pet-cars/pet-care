@@ -1,31 +1,36 @@
 import { NavLink } from 'react-router-dom'
+
 import './styles.css'
 
 export function MobileMenu(){
+
+    function recarregar() {
+        window.location.reload();
+    }
     return(
         <header className='menu-mobile'>
             <ul className="menu-content">
-                    <li className="menu-itemB">
+                    <li onClick={recarregar} className="menu-itemB">
                         <NavLink to="/">
                             Início
                         </NavLink>
                     </li>
-                    <li className="menu-itemB">
+                    <li onClick={recarregar} className="menu-itemB">
                         <NavLink to="/Sobre">
                             Sobre
                         </NavLink>
                     </li>
-                    <li className="menu-itemB">
+                    <li onClick={recarregar}  className="menu-itemB">
                         <NavLink to="/contato">
                             Contato
                         </NavLink>
                     </li>
-                    <li className="menu-itemB">
+                    <li onClick={recarregar}  className="menu-itemB">
                         <NavLink to="/login">
                             Login
                         </NavLink>
                     </li>
-                    <button className="buttonB">
+                    <button onClick={recarregar}  className="buttonB">
                         <NavLink to="/cadastro">Cadastre-se</NavLink>
                     </button>
             </ul>
