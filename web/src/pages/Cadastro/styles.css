@@ -63,3 +63,18 @@ input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+
+@media (max-width:768px) {
+    .formulario{
+        flex-direction: column;
+    }
+    .form-cadastro{
+        width: 100%;
+    }
+    .part-1{
+        width: 100%;
+    }
+    .part-2{
+        width: 100%;
+    }
+}

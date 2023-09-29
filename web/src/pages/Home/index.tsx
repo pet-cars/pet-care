@@ -58,7 +58,7 @@ export default function Home() {
             <section className="sobre">
                 <h2 className="titulo-sobre"><em>Sobre</em> o <span>Projeto</span></h2>
                 <div className="sobre-content">
-                    <img src={sobre}/>
+                    <img className="img-sobre" src={sobre}/>
 
                     <div className="text-sobre">
                         <p>A situação de todos os animais da Cidade de Ribeirão Pires é de extrema importância para o bem-estar e segurança tanto dos animais quanto dos seres humanos, nosso aplicativo armazenará os dados dos bichinhos. Esse tipo de levantamento é fundamental para entender a quantidade e a diversidade dos animais, bem como as condições em que vivem.</p>

@@ -85,6 +85,9 @@ em{
     text-align: center;
     margin-bottom: 5vh;
 }
+.img-sobre{
+    display: block;
+}
 .sobre-content{
     display: flex;
     align-items: center;
@@ -96,6 +99,17 @@ em{
 }
 @media (max-width:768px){
     .foto{
+        display: none;
+    }
+    .sobre-content{
+        flex-direction: column;
+    }
+    .os-beneficios{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+    .img-sobre{
         display: none;
     }
 }

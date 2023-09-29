@@ -63,3 +63,10 @@ footer{
 .direitos_autorais{
     text-align: end;
 }
+
+@media (max-width:768px) {
+    .contato {
+        flex-direction: column;
+        gap: 2rem;
+    }
+}

@@ -2,7 +2,7 @@ import './styles.css'
 import equipe from '../../assets/images/equipe.png'
 import f1 from '../../assets/images/1.jpg'
 import f2 from '../../assets/images/2.jpg'
-import f3 from '../../assets/images/3.jpg'
+import f3 from '../../assets/images/3.png'
 import f4 from '../../assets/images/4.jpg'
 import f5 from '../../assets/images/5.jpg'
 import f6 from '../../assets/images/6.jpg'
@@ -43,7 +43,8 @@ import f8 from '../../assets/images/8.jpg'
 
                         <div className='foto-1'>
                             <div className='legenda l2'>
-                                    <p>Esse Nenezão veio tomar vacina…para quem não sabe, ele é um dos 60 cães resgatados do canil clandestino, vítima de maus tratos.. hoje ele está em novo lar e já está gordinho assim… quem viu e quem vê !!!!
+                                <p>Após averiguação de possível maus-tratos, a equipe DPFAUNA averiguou que na vdd era uma cachorra comunitária que uma senhora cuidava, mas dava muitas crias por ter acesso a rua.. Acionado a nossa Equipe de Emergência com nossa Ambulância Animal (SARUÊ) para fazer a castração dessa cachorra.
+                                    Missão dada é missão cumprida!!!!
                                 </p>
                             </div>
                             <img className='f' src={f2} alt="" />
@@ -52,7 +53,7 @@ import f8 from '../../assets/images/8.jpg'
                         <div className='foto-1'>
                             <img className='f' src={f3} alt="" />
                             <div className='legenda'>
-                                    <p>Festival do Chocolate Feira de adoção e também dia de vacinação antirrábica</p>
+                                    <p>Esse Nenezão veio tomar vacina… para quem não sabe, ele é um dos 60 cães resgatados do canil clandestino, vítima de maus tratos.. hoje ele está em novo lar e já está gordinho assim… quem viu e quem vê !!!!</p>
                             </div>
                         </div>
 
@@ -63,33 +64,7 @@ import f8 from '../../assets/images/8.jpg'
                             <img className='f' src={f4} alt="" />
                         </div>
 
-                        <div className='foto-1'>
-                            <img className='f' src={f5} alt="" />
-                            <div className='legenda'>
-                                    <p>Bothrops jararaca 🐍</p>
-                                    <p>Essa espécie vem aparecendo com frequência, dentre eles os possíveis motivos ou a junção deles.</p>
-                            </div>
-                        </div>
-
-                        <div className='foto-1'>
-                            <div className='legenda l2'>
-                                    <p>agarto atacado por cães…
-precisa ser entubado para receber
-oxigênio durante cuidados veterinários !!!</p>
-                            </div>
-                            <img className='f' src={f6} alt="" />
-                        </div>
-
                         
-
-                        
-                        <img className='f' src={f2} alt="" />
-                        <img className='f' src={f3} alt="" />
-                        <img className='f' src={f4} alt="" />
-                        <img className='f' src={f5} alt="" />
-                        <img className='f' src={f6} alt="" />
-                        <img className='f' src={f7} alt="" />
-                        <img className='f' src={f8} alt="" />
                     </div>
                 </div>
 
