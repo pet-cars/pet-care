@@ -27,11 +27,11 @@ import f8 from '../../assets/images/8.jpg'
                     <p>Alem dos casos atendidos no Departamento a equipe conta com o castramovel, que é uma van veterinaria que ja realizoumais de 1300 processos de castrações em cães e gatos, totalmente gratuitos</p>
                 </div>
             </div>
-                <div className='galeria'>
                     <h2 className='titulo-galeria'>Um <span>pouco</span> do <em>nosso</em> trabalho</h2>
+                <div className='galeria'>
 
                     <div className='fotos'>
-                        <div className='foto-1'>
+                        <div className='foto-1 f1'>
                             <img className='f' src={f1} alt="" />
                             <div className='legenda'>
                                     <p>Dia de EcoAção na Escola São José</p>
@@ -44,24 +44,24 @@ import f8 from '../../assets/images/8.jpg'
                         <div className='foto-1'>
                             <div className='legenda l2'>
                                 <p>Após averiguação de possível maus-tratos, a equipe DPFAUNA averiguou que na vdd era uma cachorra comunitária que uma senhora cuidava, mas dava muitas crias por ter acesso a rua.. Acionado a nossa Equipe de Emergência com nossa Ambulância Animal (SARUÊ) para fazer a castração dessa cachorra.
-                                    Missão dada é missão cumprida!!!!
+                                   Missão dada é missão cumprida!!!!
                                 </p>
                             </div>
-                            <img className='f' src={f2} alt="" />
+                            <img className='f2' src={f2} alt="" />
                         </div>
                         
-                        <div className='foto-1'>
+                        <div className='foto-1 f3'>
                             <img className='f' src={f3} alt="" />
                             <div className='legenda'>
                                     <p>Esse Nenezão veio tomar vacina… para quem não sabe, ele é um dos 60 cães resgatados do canil clandestino, vítima de maus tratos.. hoje ele está em novo lar e já está gordinho assim… quem viu e quem vê !!!!</p>
                             </div>
                         </div>
 
-                        <div className='foto-1'>
+                        <div className='foto-1 f4'>
                             <div className='legenda l2'>
                                     <p>Mais um dia da equipe cuidando da fauna silvestre para o bem da nossa cidade de Ribeirao Pires</p>
                             </div>
-                            <img className='f' src={f4} alt="" />
+                            <img className='f2' src={f4} alt="" />
                         </div>
 
                         

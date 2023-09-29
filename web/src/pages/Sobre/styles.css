@@ -21,6 +21,7 @@
 }
 .galeria{
     margin-top: 2.5rem;
+    display: flex;
 }
 .titulo-galeria{
     text-align: center;
@@ -36,6 +37,11 @@
     width: 33%;
     border-radius: 25px;
 }
+
+.f2{
+    width: 33%;
+    border-radius: 25px;
+}
 .legenda{
     background: var(--azulao);
     padding: 1rem;
@@ -45,4 +51,40 @@
 .l2{
     border-radius: 25px 0 0 25px;
     background-color: var(--laranjao);
+}
+
+@media (max-width: 768px) {
+    .conteudo-sobre{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .galeria{
+        flex-direction: column;
+    }
+
+    .equipe{
+        width: 100%;
+    }
+
+    .sobre-equipe{
+        width: 100%;
+    }
+
+    .foto-1{
+        flex-direction: column;
+    }
+
+    .f{
+        width: 100%;
+    }
+    .legenda{
+        border-radius: 25px;
+    }
+
+    .f2{
+        order: -1;
+        width: 100%;
+        border-radius: 25px;
+    }
 }
