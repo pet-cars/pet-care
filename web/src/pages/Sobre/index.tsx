@@ -53,13 +53,13 @@ import f8 from '../../assets/images/8.jpg'
                         <div className='foto-1'>
                             <img className='f' src={f7} alt="" />
                             <div className='legenda'>
-                                    <p>nesta terça-feira, dia 27, duas operações feitas pelo nosso Departamento resultaram no resgate de 65 animais.</p>
+                                    <p>Nesta terça-feira, dia 27, duas operações feitas pelo nosso Departamento de Proteção á fauna silvestre resultaram no resgate de 65 animais.</p>
                             </div>
                         </div>
 
                         <div className='foto-1'>
                             <div className='legenda l2'>
-                                    <p>Mais um dia da equipe cuidando da fauna silvestre para o bem da nossa cidade de Ribeirao Pires</p>
+                                    <p>Mais um dia da nossa equipe cuidando da fauna silvestre da nossa cidade de Ribeirao Pires, para o bem dos animais e das pessoas</p>
                             </div>
                             <img className='f2' src={f4} alt="" />
                         </div>
