@@ -33,7 +33,7 @@
     align-items: center;
     gap: 1.5rem;
 }
-.menu-itemB a{
+.menu-itemB {
     color: var(--laranjao);
 }
 .menu-itemB {

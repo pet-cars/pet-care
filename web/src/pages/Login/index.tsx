@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom'
 export default function Login(){
 
     return(
-        <main>
+        <main className='main-login'>
             <h1 className='titulo-login'><span>Login</span></h1>
             <form className='form-login'>
                 <div className='conteudo'>
@@ -27,9 +27,9 @@ export default function Login(){
                     </div>
 
                     <div className='cadastrar'>    
-                        <NavLink className='loginC' to="/cadastro">
+                        <a className='loginC' href="/cadastro">
                             Não possui uma conta? crie uma agora
-                        </NavLink>
+                        </a>
                     </div>
                 </div>
 

@@ -50,14 +50,14 @@ import f8 from '../../assets/images/8.jpg'
                             <img className='f2' src={f2} alt="" />
                         </div>
                         
-                        <div className='foto-1 f3'>
-                            <img className='f' src={f3} alt="" />
+                        <div className='foto-1'>
+                            <img className='f' src={f7} alt="" />
                             <div className='legenda'>
-                                    <p>Esse Nenezão veio tomar vacina… para quem não sabe, ele é um dos 60 cães resgatados do canil clandestino, vítima de maus tratos.. hoje ele está em novo lar e já está gordinho assim… quem viu e quem vê !!!!</p>
+                                    <p>nesta terça-feira, dia 27, duas operações feitas pelo nosso Departamento resultaram no resgate de 65 animais.</p>
                             </div>
                         </div>
 
-                        <div className='foto-1 f4'>
+                        <div className='foto-1'>
                             <div className='legenda l2'>
                                     <p>Mais um dia da equipe cuidando da fauna silvestre para o bem da nossa cidade de Ribeirao Pires</p>
                             </div>

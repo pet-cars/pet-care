@@ -65,6 +65,10 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width:768px) {
+    .main-cadastro{
+        margin: 0 auto;
+        padding: 0 1.5rem;
+    }
     .formulario{
         flex-direction: column;
     }
@@ -73,8 +77,10 @@ input::-webkit-inner-spin-button {
     }
     .part-1{
         width: 100%;
+        margin: auto;
     }
     .part-2{
         width: 100%;
+        margin: auto;
     }
 }
