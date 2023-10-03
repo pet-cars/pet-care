@@ -10,9 +10,15 @@
 }
 
 .contato-contato{
-    margin-top: 1rem;
-    padding: 1rem;
+    margin: 1rem auto;
+    padding: 2rem;
+    width: 780px;
+    border-radius: 25px;
     background-color: #F8F8FF;
+    box-shadow: 1px 1px 3px 3px #e7dede;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
 .email-contato{
@@ -28,7 +34,17 @@
 .email-input{
     width: 50%!important;
     margin: 0!important;
+    height: 2rem;
+    font-size: 17px;
+    color: #03A4ED;
+
 }
+.email-input textarea:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    font-size: 17px;
+}
+
 
 .contato-input{
     margin: auto;
@@ -41,8 +57,32 @@
     flex-direction: column;
 }
 .contato-input::-webkit-input-placeholder{
-    font-size: 19px;
+    font-size: 17px;
+    opacity: 0.7;
     font-family: Poppins, sans-serif;
     color: #03A4ED;
+}
 
+.text-input{
+    height: 300px;
+    font-size: 17px;
+    color: #03A4ED;
+    font-family: Poppins, sans-serif;
+    resize: none;
+}
+
+.text-input textarea:focus, .text-input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    font-size: 17px;
+}
+
+@media (max-width:768px) {
+    .contato-contato{
+        width: 100%;
+        padding: 1.5rem;
+    }
+    .email-input{
+        width: 100%!important;
+    }
 }

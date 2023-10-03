@@ -11,6 +11,16 @@
                     <label className='label-contato-email'>Email:</label>
                     <input className='contato-input email-input' placeholder='Insira seu email' type='email'/>
                 </div>
+
+                <div className='email-contato'>
+                    <label className='label-contato-email'>Fale conosco</label>
+                    <textarea className='contato-input text-input' placeholder='Digite aqui'>
+                    </textarea>
+                </div>
+
+                <div className='botao'>
+                    <button type='submit' className='enviar-cadastro'>Enviar</button>
+                </div>
             </div>
         </main>
     )

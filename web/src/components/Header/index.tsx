@@ -1,5 +1,5 @@
 import "./styles.css"
-import logo from "../../assets/images/logo.png"
+import logo from "../../assets/images/logo.svg"
 import {Menu, X} from 'lucide-react'
 
 import { NavLink } from "react-router-dom"
@@ -23,7 +23,7 @@ export default function Header() {
     return (
         <header>
             <nav>
-                <img className="logo" src={logo} alt="logo" />
+                <img className="logo" src={logo}/>
                 <ul className="menu">
                     <li className="menu-item">
                         <NavLink to="/">
