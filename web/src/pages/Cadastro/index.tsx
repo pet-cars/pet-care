@@ -1,5 +1,4 @@
 import './styles.css'
-import azul from '../../assets/images/detalhe-azul.png'
 import { useState } from 'react'
 import axios from 'axios';
 

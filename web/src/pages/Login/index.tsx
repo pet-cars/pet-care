@@ -1,6 +1,5 @@
 import './styles.css'
 import detalhe from '../../assets/images/footer-dec.png'
-import { NavLink } from 'react-router-dom'
 export default function Login(){
 
     return(

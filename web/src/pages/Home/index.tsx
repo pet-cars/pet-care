@@ -5,7 +5,6 @@ import b1 from '../../assets/images/b1.png'
 import b2 from '../../assets/images/b2.png'
 import b3 from '../../assets/images/b3.png'
 import sobre from '../../assets/images/sobre.png'
-import Footer from "../../components/Footer"
 
 export default function Home() {
     return (

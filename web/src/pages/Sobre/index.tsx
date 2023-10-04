@@ -2,12 +2,8 @@ import './styles.css'
 import equipe from '../../assets/images/equipe.png'
 import f1 from '../../assets/images/1.jpg'
 import f2 from '../../assets/images/2.jpg'
-import f3 from '../../assets/images/3.png'
 import f4 from '../../assets/images/4.jpg'
-import f5 from '../../assets/images/5.jpg'
-import f6 from '../../assets/images/6.jpg'
 import f7 from '../../assets/images/7.jpg'
-import f8 from '../../assets/images/8.jpg'
 
  export default function Sobre(){
     return(
