@@ -1,7 +1,7 @@
 import rotas from "../rotas"
 import express from 'express'
 import { Router, Request, Response } from 'express'
-import {bdConexao} from '../config/banco'
+import bdConexao from '../config/banco'
 
 const mysql = require('mysql');
 const cors = require('cors');
@@ -27,10 +27,11 @@ app.post("/register", (request: Request, response: Response) => {
     try{
         const valores = request.body
         const parametros = [valores.nome, valores.rg, valores.cpf, valores.email, valores.senha, valores.cep, valores.cidade, valores.bairro, valores.endereco, valores.numero, valores.complemento]
-        const query = "INSERT INTO cadastro (nome, rg, cpf, email, senha, cep, cidade, bairro, endereco, numero, complemento) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) "
-
+        const query = "INSERT INTO register (nome, rg, cpf, email, senha, cep, cidade, bairro, endereco, numero, complemento) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) "
+        console.log(request.body.data);
+        
         bdConexao.query(query, parametros)
-        response.status(200).json({message: "Dados inseridos com sucesso", recebe: valores, valoresReceibdos: valores})
+        response.status(200).json({message: "Dados inseridos com sucesso", recebe: valores, valoresReceibdos: parametros})
     }
     catch{
         (error: any, result: any) => {

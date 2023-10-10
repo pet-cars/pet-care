@@ -4,16 +4,16 @@ import axios from 'axios';
 
 const valorFormulario = {
     nome: String,
-    RG: Number,
-    CPF: Number,
+    RG: String,
+    CPF: String,
     email: String,
     senha: String,
     Csenha: String,
-    CEP: Number,
+    CEP: String,
     cidade: String,
     bairro: String,
     endereco: String,
-    numero: Number,
+    numero: String,
     complemento: String,
 }
 
@@ -72,12 +72,12 @@ export default function Cadastro() {
                         
                         <div className='teste'>
                             <label htmlFor="RG" className='label-cadastro'>RG:</label>
-                            <input className='form-campo' required name='RG' id='RG' type="number" onChange={onChange}/>
+                            <input className='form-campo' required name='RG' id='RG' type="tex" onChange={onChange}/>
                         </div>
                         
                         <div className='teste'>
                             <label htmlFor="CPF" className='label-cadastro'>CPF:</label>
-                            <input className='form-campo' required name='CPF' id='CPF' type="number" onChange={onChange}/>
+                            <input className='form-campo' required name='CPF' id='CPF' type="tex" onChange={onChange}/>
                         </div>
                         
                         <div className='teste'>
@@ -100,7 +100,7 @@ export default function Cadastro() {
 
                         <div className='teste'>
                             <label htmlFor="CEP" className='label-cadastro'>CEP:</label>
-                            <input className='form-campo' required name='CEP' id='CEP' type="number" onChange={onChange}/>
+                            <input className='form-campo' required name='CEP' id='CEP' type="tex" onChange={onChange}/>
                         </div>
                         
                         <div className='teste'>
@@ -120,7 +120,7 @@ export default function Cadastro() {
                         
                         <div className='teste'>
                             <label htmlFor="numero" className='label-cadastro'>Número:</label>
-                            <input className='form-campo' required name='numero' id='numero' type="number" onChange={onChange}/>
+                            <input className='form-campo' required name='numero' id='numero' type="tex" onChange={onChange}/>
                         </div>
                         
                         <div className='teste'>
