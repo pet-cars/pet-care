@@ -1,6 +1,7 @@
 import rotas from "../rotas"
 import express from 'express'
 import { Router, Request, Response } from 'express'
+import {bdConexao} from '../config/banco'
 
 const mysql = require('mysql');
 const cors = require('cors');
@@ -18,20 +19,28 @@ app.get('/', (request: Request, response: Response) => {
     console.log('vamo');
     response.json({message: "vai"})
 })
+
 app.post("/register", (request: Request, response: Response) => {
 
-    const valores = request.body.data;
+    //response.json({message: "Funcionando"})
 
-    mysql.query("INSERT INTO usuario (nome, rg, cpf, email, senha, cep, cidade, bairro, endereco, numero, complemento) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) ", 
-        Object.values(valores),
+    try{
+        const valores = request.body
+        const parametros = [valores.nome, valores.rg, valores.cpf, valores.email, valores.senha, valores.cep, valores.cidade, valores.bairro, valores.endereco, valores.numero, valores.complemento]
+        const query = "INSERT INTO cadastro (nome, rg, cpf, email, senha, cep, cidade, bairro, endereco, numero, complemento) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) "
+
+        bdConexao.query(query, parametros)
+        response.status(200).json({message: "Dados inseridos com sucesso", recebe: valores, valoresReceibdos: valores})
+    }
+    catch{
         (error: any, result: any) => {
             if (error) {
                 console.log(error);
-                
             } else {
                 response.send(result);
             }
-        })
+        }
+    }
 });
 // app.use('/', rotas())
 app.listen(3333, () => "Backend Funcionando")

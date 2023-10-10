@@ -1,15 +1,15 @@
 const mysql = require("mysql")
 
-export const conexao = () => {
+// export const conexao = () => {
 
-    const bdConexao = mysql.createConnection({
+    export const bdConexao = mysql.createConnection({
         user: "root",
         host: "localhost",
         port: "3306",
-        database: "StreetPets",
+        database: "streetpets",
         password: ""
     });
 
-    return bdConexao;
-}
+//     return bdConexao;
+// }
 

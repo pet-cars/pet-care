@@ -32,12 +32,25 @@ export default function Cadastro() {
         e.preventDefault();
         console.log(formValores);
         setFormValores(valorFormulario);
+        
 
         try {
-            axios.post("http://localhost:3333/cadastro",{ 
-                   
-            //  TODO: mapear o formValores para enviar os dados no backend
-                }).then((res) => console.log(res))
+            axios.post("http://localhost:3333/register", formValores)
+            //{ 
+            //     nome: formValores.nome,
+            //     rg: formValores.RG,
+            //     cpf: formValores.CPF,
+            //     email: formValores.email,
+            //     senha: formValores.senha,
+            //     cep: formValores.CEP,
+            //     cidade: formValores.cidade,
+            //     bairro: formValores.bairro,
+            //     endereco: formValores.endereco,
+            //     numero: formValores.numero,
+            //     complemento: formValores.complemento
+            // //  TODO: mapear o formValores para enviar os dados no backend
+            //     })
+            .then((res) => console.log(res))
         } catch (error) {
             console.log(error);
         }
