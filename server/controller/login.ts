@@ -11,9 +11,12 @@ export const login = async (request:Request, response: Response) =>{
         Object.values(valores),
         (error: any, result: any) => {
             if (error) {
+                console.log("é duru");
+                
                 console.log(error);
                 
             } else {
+                console.log(result)
                 response.send(result);
             }
         })
