@@ -1,20 +1,51 @@
 import './styles.css'
 import detalhe from '../../assets/images/footer-dec.png'
+import axios from 'axios'
+import { useState } from 'react'
 export default function Login(){
+
+    const valorFormulario = {
+        email: String,
+        senha: String,
+    }
+    
+        const [formValores, setFormValores] = useState(valorFormulario);
+    
+        const onChange = (e : React.ChangeEvent<HTMLInputElement>) => {
+            setFormValores((prevState)=> ({
+                 ...prevState,
+                [e.target.id]: e.target.value
+            }))
+        }
+    
+        function Form(e : React.FormEvent<HTMLFormElement>){
+            e.preventDefault();
+            console.log(formValores);
+            setFormValores(valorFormulario);
+            
+    
+            try {
+                axios.get("http://localhost:3333/login", { params: formValores})
+
+                .then((res) => console.log(res))
+            } catch (error) {
+                console.log(error);
+            }
+        }
 
     return(
         <main className='main-login'>
             <h1 className='titulo-login'><span>Login</span></h1>
-            <form className='form-login'>
+            <form className='form-login' onSubmit={Form}>
                 <div className='conteudo'>
                     <div className='email'>
                         <label className='label-login'>Email:</label>
-                        <input className='form-campo-login' type='email' placeholder='Digite seu email'/>
+                        <input className='form-campo-login' type='email' placeholder='Digite seu email' required name='email' id='email' onChange={onChange}/>
                     </div>
 
                     <div className='senha'>
                         <label className='label-login'>Senha:</label>
-                        <input className='form-campo-login' type='password' placeholder='Digite sua senha'/>
+                        <input className='form-campo-login' type='password' placeholder='Digite sua senha' required name='senha' id='senha' onChange={onChange}/>
                     </div>
 
                     <div className='lembre'>

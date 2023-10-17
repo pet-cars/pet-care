@@ -4,12 +4,12 @@ import axios from 'axios';
 
 const valorFormulario = {
     nome: String,
-    RG: String,
-    CPF: String,
+    rg: String,
+    cpf: String,
     email: String,
     senha: String,
     Csenha: String,
-    CEP: String,
+    cep: String,
     cidade: String,
     bairro: String,
     endereco: String,
@@ -36,20 +36,6 @@ export default function Cadastro() {
 
         try {
             axios.post("http://localhost:3333/register", formValores)
-            //{ 
-            //     nome: formValores.nome,
-            //     rg: formValores.RG,
-            //     cpf: formValores.CPF,
-            //     email: formValores.email,
-            //     senha: formValores.senha,
-            //     cep: formValores.CEP,
-            //     cidade: formValores.cidade,
-            //     bairro: formValores.bairro,
-            //     endereco: formValores.endereco,
-            //     numero: formValores.numero,
-            //     complemento: formValores.complemento
-            // //  TODO: mapear o formValores para enviar os dados no backend
-            //     })
             .then((res) => console.log(res))
         } catch (error) {
             console.log(error);
@@ -72,12 +58,12 @@ export default function Cadastro() {
                         
                         <div className='teste'>
                             <label htmlFor="RG" className='label-cadastro'>RG:</label>
-                            <input className='form-campo' required name='RG' id='RG' type="tex" onChange={onChange}/>
+                            <input className='form-campo' required name='rg' id='rg' type="text" onChange={onChange}/>
                         </div>
                         
                         <div className='teste'>
                             <label htmlFor="CPF" className='label-cadastro'>CPF:</label>
-                            <input className='form-campo' required name='CPF' id='CPF' type="tex" onChange={onChange}/>
+                            <input className='form-campo' required name='cpf' id='cpf' type="text" onChange={onChange}/>
                         </div>
                         
                         <div className='teste'>
@@ -100,7 +86,7 @@ export default function Cadastro() {
 
                         <div className='teste'>
                             <label htmlFor="CEP" className='label-cadastro'>CEP:</label>
-                            <input className='form-campo' required name='CEP' id='CEP' type="tex" onChange={onChange}/>
+                            <input className='form-campo' required name='cep' id='cep' type="text" onChange={onChange}/>
                         </div>
                         
                         <div className='teste'>
@@ -120,7 +106,7 @@ export default function Cadastro() {
                         
                         <div className='teste'>
                             <label htmlFor="numero" className='label-cadastro'>Número:</label>
-                            <input className='form-campo' required name='numero' id='numero' type="tex" onChange={onChange}/>
+                            <input className='form-campo' required name='numero' id='numero' type="text" onChange={onChange}/>
                         </div>
                         
                         <div className='teste'>

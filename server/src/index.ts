@@ -20,6 +20,29 @@ app.get('/', (request: Request, response: Response) => {
     response.json({message: "vai"})
 })
 
+app.get("/login", (request: Request, response: Response) =>{
+
+    try{
+        const valores = request.body
+        const parametros = [valores.email, valores.senha]
+        const query = "SELECT * FROM register WHERE email = ? and senha = ?"
+        console.log(request.body.data);
+
+        bdConexao.query(query, parametros)
+        response.status(200).json({message: "Usuário encontrado", response})
+    }
+
+    catch{
+        (error: any, result: any) => {
+            if (error) {
+                console.log(error);
+            } else {
+                response.send(result);
+            }
+        }
+    }
+})
+
 app.post("/register", (request: Request, response: Response) => {
 
     //response.json({message: "Funcionando"})
